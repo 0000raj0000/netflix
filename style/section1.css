@@ -1,0 +1,129 @@
+.sec1{
+    background-image: linear-gradient(rgba(0,0,0,0.9) , rgba(0,0,0,0.6) 10%, rgba(0,0,0,0.9)), url(../assets/images/bg.jpg);
+    background-position: center 8%;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    display: grid;
+    place-items: center;
+}
+
+.sec1 .content{
+    color : var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec1 .content .p1{
+    width: 600px;
+    font-size: 60px;
+    line-height: 70px;
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sec1 .content .p2{
+    margin: 10px 0px 24px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.sec1 .content .p3{
+    font-size: 16px;
+    text-align: center;
+}
+
+.sec1 .content .fields{
+    margin: 12px 0px 0px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 8px;
+}
+
+.sec1 .content .fields input{
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-size: 16px;
+    color: #fff;
+}
+.sec1 .content .fields input::placeholder{
+    color: rgba(255, 255, 255, 0.7)
+}
+
+.sec1 .content .fields button{
+    padding: 10px 30px;
+    color: var(--text-color);
+    background: var(--primary-red);
+    border: none;
+    font-weight: bolder;
+    font-size: 20px;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+@media (max-width: 1280px) {
+    .sec1{
+        background-size: cover;
+    }
+    .sec1 .content .p1{
+        font-size: 40px;
+        width: 500px;
+        line-height: 50px;
+    }
+    .sec1 .content .p2{
+        font-size: 16px;
+        font-weight: normal;
+    }
+    .sec1 .content .p3{
+        max-width: 450px;
+    }
+    .sec1 .content .fields button{
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 960px){
+    .sec1 .content .p1{
+        font-size: 32px;
+        width: 400px;
+        line-height: 40px;
+    }
+    .sec1 .content .p2{
+        font-size: 14px;
+    }
+    .sec1 .content .p3{
+        font-size: 14px;
+        max-width: 380px;
+    }
+    .sec1 .content .fields{
+        max-width: 400px;
+        grid-template-columns: 1.5fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .sec1 .content .p1{
+        font: 26px;
+        max-width: 90vw;
+    }
+    .sec1 .content .p2{
+        max-width: 400px;
+    }
+    .sec1 .content .p3{
+        max-width: 400px;
+    }
+    .sec1 .content .fields{
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        row-gap: 15px;
+    }
+    .sec1 .content .fields button{
+        font-size: 16px;
+        place-self: center;
+    }
+}

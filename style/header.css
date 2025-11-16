@@ -1,0 +1,81 @@
+header{
+    width: 100%;
+    display: flex;
+    position: absolute;
+}
+nav{
+    display: block;
+    margin: auto;
+    width: 80vw;
+    padding: 25px 32px;
+    box-sizing: content-box;
+    display: flex;
+    align-items: center;
+}
+nav .logo{
+    flex: 1;
+}
+nav .logo img{
+    width: 160px;
+}
+nav .buttons{
+    align-self: flex-start;
+    display: block;
+}
+nav .buttons button{
+    padding: 8px 15px;
+    margin-right: 8px;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 3px;
+    display: inline-flex;
+    align-items: center;
+}
+nav .buttons .lang span i{
+    font-size: 14px;
+    line-height: 10px;
+}
+nav .buttons .lang span:last-child{
+    margin-left: 10px;
+}
+nav .buttons .lang{
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: var(--text-color);
+}
+nav .buttons .sign{
+    background-color: var(--primary-red);
+    color: var(--text-color);
+}
+nav .buttons .lang p{
+    display: inline-block;
+    margin: 0px 10px;
+}
+nav .buttons .lang span{
+    text-align: center;
+    font-size: 8px;
+}
+
+@media screen and (max-width: 1280px) {
+    nav{
+        width: 90vw;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    nav{
+        width: 95vw;
+    }
+    nav .logo img{
+        width: 100px;
+    }    
+}
+
+@media screen and (max-width: 600px){
+    nav .buttons .lang p{
+        display: none;
+    }
+}
