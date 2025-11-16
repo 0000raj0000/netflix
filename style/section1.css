@@ -1,10 +1,12 @@
 .sec1{
+    position: relative;
     background-image: linear-gradient(rgba(0,0,0,0.9) , rgba(0,0,0,0.6) 10%, rgba(0,0,0,0.9)), url(../assets/images/bg.jpg);
     background-position: center 8%;
     background-size: max(1200px, 100vw);
     background-repeat: no-repeat;
     display: grid;
     place-items: center;
+    z-index: -1;
 }
 
 .sec1 .content{
@@ -118,6 +120,7 @@
         max-width: 400px;
     }
     .sec1 .content .fields{
+        max-width: 90vw;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr;
         row-gap: 15px;

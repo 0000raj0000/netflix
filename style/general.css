@@ -1,6 +1,6 @@
 :root{
     --primary-red: rgb(229, 9, 20);
-    --text-color: rgb(255, 255, 255);
+    --text-color: rgb(255, 255, 255);   
 }
 
 *{
@@ -11,4 +11,5 @@
 section{
     height: 100vh;
     width:100%;
+    background: black;
 }
